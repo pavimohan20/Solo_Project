@@ -1,6 +1,4 @@
-Here’s a detailed **Markdown document** for your **El Doctor - A monitoring tool to rule them all!** project:
 
-```markdown
 # El Doctor - A Monitoring Tool to Rule Them All!
 
 ## Overview
