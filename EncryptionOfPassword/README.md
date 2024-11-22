@@ -17,11 +17,29 @@ The game involves connecting to different servers, completing challenges, and re
 ## Files in this Repository
 
 - `passwords.txt.gpg`: Encrypted file containing the passwords for each level.
-- `my_public_key.asc`: Exported public GPG key.
+- `my_public_key.asc`: Your exported public GPG key.
 
 ## Public GPG Key
 
-Use the following command to export your public key:
+You can use the following command to export your public key:
 
 ```bash
 gpg --armor --export <your-key-id> > my_public_key.asc
+```
+
+Please ensure that your public key is included in this repository for verification.
+
+## Challenges
+
+Here are the challenges you completed in the Century game:
+
+- **Century1**: Password is `century1`
+- **Century2**: Password is the PowerShell build version of the system.
+- **Century3 to Century15**: Passwords are retrieved based on various system properties and files.
+
+For detailed instructions on completing each challenge, visit the [Century Game](https://century.underthewire.tech) website.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
