@@ -1,74 +1,199 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background: #ffab91;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background: #ff8a65;
+}
+
+/* Section containers */
+.welcome-section, .local-heroes, .login-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.welcome-section {
+  text-align: center;
+}
+
+.welcome-section h2 {
+  font-size: 2rem;
+  color: #d500f9;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  color: #6a1b9a;
+}
+
+.welcome-section .button {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #d500f9;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.welcome-section .button:hover {
+  background: #aa00ff;
+}
+
+/* Hero section */
+.local-heroes h2 {
+  text-align: center;
+  color: #004d40;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.hero-card {
+  flex: 1;
+  min-width: 220px;
+  background: #ffeb3b;
+  color: #444;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero-card img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.hero-card h3 {
+  font-size: 1.4rem;
+  color: #e91e63;
+}
+
+.hero-card p {
+  font-size: 1rem;
+  color: #424242;
+}
+
+/* Login form styles */
+.login-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #00897b;
+  margin-bottom: 1rem;
+}
+
+.login-container p {
+  text-align: center;
+  color: #546e7a;
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  color: #212121;
+  margin-bottom: 0.5rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+form input:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background: #ff6f61;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #d84315;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-}
+  }
 
-/* Container for the login form */
-.container {
-    background-color: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-/* Header styling */
-h2 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Input fields */
-.input-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.input-group label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-}
-
-.input-group input:focus {
-    border-color: #4CAF50;
-}
-
-/* Button styling */
-.button-group button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.button-group button:hover {
-    background-color: #45a049;
-}
-
-.button-group button:active {
-    background-color: #3e8e41;
+  .hero-card {
+    max-width: 300px;
+  }
 }
