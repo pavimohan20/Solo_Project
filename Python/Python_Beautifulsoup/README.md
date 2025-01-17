@@ -1,11 +1,11 @@
-# IMDb Movie Extractor
+# Movie Extractor
 
-This project automates the extraction of movie information from IMDb. It retrieves movie links, titles, and synopses, organizes the data into lists, constructs a DataFrame using pandas, and saves the DataFrame to a CSV file.
+This project automates the extraction of movie information from leterboxd.com. It retrieves movie links, titles, and synopses, organizes the data into lists, constructs a DataFrame using pandas, and saves the DataFrame to a CSV file.
 
 ## Project Structure
 
 ```
-imdb-movie-extractor
+movie-extractor
 ├── src
 │   ├── main.py          # Entry point of the application
 │   └── utils
@@ -19,7 +19,7 @@ imdb-movie-extractor
 1. Clone the repository:
    ```
    git clone <repository-url>
-   cd imdb-movie-extractor
+   cd movie-extractor
    ```
 
 2. Create and activate a virtual environment:
@@ -47,7 +47,7 @@ This will initiate the extraction process and save the movie data to a CSV file.
 
 ## Running the Script
 
-To run the script, navigate to the `imdb-movie-extractor` directory and execute the following command:
+To run the script, navigate to the `movie-extractor` directory and execute the following command:
 
 ```sh
 python src/main.py
