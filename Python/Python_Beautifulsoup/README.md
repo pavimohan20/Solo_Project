@@ -1,6 +1,6 @@
 # Movie Extractor
 
-This project automates the extraction of movie information from leterboxd.com. It retrieves movie links, titles, and synopses, organizes the data into lists, constructs a DataFrame using pandas, and saves the DataFrame to a CSV file.
+This project automates the extraction of movie information from letterboxd.com. It retrieves movie links, titles, and synopses, organizes the data into lists, constructs a DataFrame using pandas, and saves the DataFrame to a CSV file.
 
 ## Project Structure
 
